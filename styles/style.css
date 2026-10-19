@@ -127,6 +127,25 @@
   mask-image: radial-gradient(circle, black 60%, transparent 70%);
 }
 
+.skills {
+  margin-bottom: 100px;
+}
+.skills__title {
+  font-family: "Archivo Black", "Arial", sans-serif; /*Sin fuente*/
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  margin: 0 0 50px;
+}
+.skills__icons {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer {
   padding: 100px 0;
   display: flex;
