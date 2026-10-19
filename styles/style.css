@@ -1,0 +1,61 @@
+@import url("fonts.css");
+
+:root {
+  --size-web: 1440px;
+  --size-tablet: 768px;
+  --size-mobile: 320px;
+  --color-bg-body: #111111;
+  --color-bg-circle-center: #6d6dff;
+  --font-open-sans: "Open Sans", Verdana, Arial, sans-serif;
+  --font-archive-black: "Archivo Black", Impact, "Arial Black", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.body {
+  min-width: var(--size-tablet);
+  max-width: var(--size-web);
+  padding: 0 120px;
+  font-family: var(--font-open-sans);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+.bg-glow {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: var(--color-bg-body);
+  position: relative;
+  overflow-x: hidden;
+  transform: scale(1); /*no necesaria*/
+
+  /* Posiciones originales de escritorio */
+  background-image:
+    radial-gradient(
+      circle at 75% 390px,
+      var(--color-bg-circle-center) 0px,
+      transparent 300px
+    ),
+    radial-gradient(
+      circle at 50% calc(100% - 190px),
+      var(--color-bg-circle-center) 0px,
+      transparent 300px
+    );
+}
+/* Capa de desenfoque masivo (Blur) */
+.bg-glow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(200px); /*Cuánto debo aplicarle de blur?*/
+  pointer-events: none;
+  z-index: -1;
+}
