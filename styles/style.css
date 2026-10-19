@@ -4,6 +4,7 @@
   --size-web: 1440px;
   --size-tablet: 768px;
   --size-mobile: 320px;
+  --size-minimal: 200px;
   --color-bg-body: #111111;
   --color-bg-circle-center: #6d6dff;
   --color-text-base-dark-mode: #fff;
@@ -21,7 +22,7 @@ a {
   color: var(--color-text-base-dark-mode);
 }
 .body {
-  min-width: var(--size-tablet);
+  min-width: var(--size-minimal);
   max-width: var(--size-web);
   padding: 0 120px;
   font-family: var(--font-open-sans);
@@ -242,4 +243,48 @@ a {
   list-style: none;
   display: flex;
   gap: 80px;
+}
+
+/*media no admite variables*/
+@media screen and (max-width: 1440px) {
+  .body {
+    padding-inline: clamp(40px, 11.905vw - 51.428px, 120px);
+  }
+  .header {
+    padding-bottom: clamp(80px, 2.976vw + 57.143px, 100px);
+  }
+  .profile-name {
+    margin-top: clamp(0px, 7.292vw - 56px, 49px);
+    font-size: clamp(58px, 2.083vw + 42px, 72px);
+  }
+  .profile-description {
+    margin-block: clamp(20px, 1.488vw + 8.571px, 30px);
+  }
+  .photo-img {
+    width: clamp(216px, 25.446vw + 20.571px, 387px);
+    height: clamp(280px, 32.738vw + 28.571px, 500px);
+  }
+  .skills {
+    margin-bottom: clamp(80px, 2.976vw + 57.143px, 100px);
+  }
+  .skills__title {
+    margin-bottom: clamp(40px, 1.488vw + 28.571px, 50px);
+  }
+  .project__title {
+    margin-bottom: clamp(30px, 2.976vw + 7.143px, 50px);
+  }
+  .footer {
+    padding-top: clamp(80px, 2.976vw + 57.143px, 100px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    padding-inline: clamp(20px, 5.263vw + 7.368px, 40px);
+  }
+}
+@media screen and (max-width: 320px) {
+  .body {
+    padding-inline: 20px;
+  }
 }
