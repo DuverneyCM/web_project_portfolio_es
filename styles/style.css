@@ -126,3 +126,38 @@
   -webkit-mask-image: radial-gradient(circle, black 60%, transparent 70%);
   mask-image: radial-gradient(circle, black 60%, transparent 70%);
 }
+
+.footer {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact__title {
+  font-family: "Archivo Black", "Arial", sans-serif; /*Sin fuente*/
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.contact__email {
+  font-family: "Open Sans", "Arial", sans-serif; /*Sin fuente*/
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  text-decoration: none;
+  color: var(--color-bg-circle-center);
+}
+.contact__social-links {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
