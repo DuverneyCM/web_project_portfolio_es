@@ -6,6 +6,8 @@
   --size-mobile: 320px;
   --color-bg-body: #111111;
   --color-bg-circle-center: #6d6dff;
+  --color-text-base-dark-mode: #fff;
+  --color-bg-card: #1c1c1c;
   --font-open-sans: "Open Sans", Verdana, Arial, sans-serif;
   --font-archive-black: "Archivo Black", Impact, "Arial Black", sans-serif;
 }
@@ -13,6 +15,10 @@
   margin: 0;
   padding: 0;
   border: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--color-text-base-dark-mode);
 }
 .body {
   min-width: var(--size-tablet);
@@ -24,7 +30,7 @@
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #fff;
+  color: var(--color-text-base-dark-mode);
 }
 .bg-glow {
   min-height: 100vh;
@@ -79,7 +85,7 @@
   margin: 49px 0 15px 0;
 }
 .profile-headline {
-  font-family: "Open Sans", "Arial", sans-serif; /*Sin fuente*/
+  font-family: var(--font-open-sans);
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -89,7 +95,7 @@
   opacity: 50%;
 }
 .profile-description {
-  font-family: "Open Sans", "Arial", sans-serif; /*Sin fuente*/
+  font-family: var(--font-open-sans);
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -99,7 +105,7 @@
   margin: 30px 0 30px 0;
 }
 .profile-links {
-  font-family: "Open Sans", "Arial", sans-serif; /*Sin fuente*/
+  font-family: var(--font-open-sans);
   font-weight: 600;
   font-style: regular; /*semibold is weight: 600*/
   font-size: 18px;
@@ -131,7 +137,7 @@
   margin-bottom: 100px;
 }
 .skills__title {
-  font-family: "Archivo Black", "Arial", sans-serif; /*Sin fuente*/
+  font-family: var(--font-archive-black);
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
@@ -146,6 +152,63 @@
   justify-content: space-between;
 }
 
+.project__title {
+  font-family: var(--font-archive-black);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+.project-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.project-card__img {
+  width: 100%;
+  aspect-ratio: 59 / 33;
+  object-fit: cover;
+}
+.project-card__info {
+  height: 100%;
+  padding: 30px;
+  background-color: var(--color-bg-card);
+}
+.project-card__info-title {
+  font-family: var(--font-open-sans);
+  font-weight: 700;
+  font-style: regular; /*semibold is weight: 600*/
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+.project-card__info-description {
+  margin: 20px 0 30px;
+}
+.project-card__info-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.project-card__info-link-demo {
+  color: var(--color-bg-circle-center);
+}
+.project-card__info-link-github {
+  opacity: 60%;
+}
+
 .footer {
   padding: 100px 0;
   display: flex;
@@ -154,7 +217,7 @@
   text-align: center;
 }
 .contact__title {
-  font-family: "Archivo Black", "Arial", sans-serif; /*Sin fuente*/
+  font-family: var(--font-archive-black);
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
@@ -164,7 +227,7 @@
   margin-bottom: 20px;
 }
 .contact__email {
-  font-family: "Open Sans", "Arial", sans-serif; /*Sin fuente*/
+  font-family: var(--font-open-sans);
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
