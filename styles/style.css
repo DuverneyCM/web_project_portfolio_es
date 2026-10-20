@@ -121,6 +121,10 @@ a {
   /*falta agregar el rect con degradado*/
   text-decoration: none;
   color: #fff;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #4c1a97, #6d6dff);
+  border-image-slice: 1;
+  padding-bottom: 5px;
 }
 .photo-img {
   width: 387px;
