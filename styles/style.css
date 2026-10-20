@@ -149,8 +149,10 @@ a {
 }
 .skills__icons {
   list-style: none;
-  display: flex;
+  display: grid;
   justify-content: space-between;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, 50px);
 }
 
 .project__title {
