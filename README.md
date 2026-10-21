@@ -1,1 +1,5 @@
 # Portafolio
+
+Hi! This repo was created with two purpose. Firstly, to appropiate knowledge about rensposive design web development (flex and grid, relative units, calc and clamp, gradients, etc). Second, to build a main page of my professional portfolio as Full-Stack developer and embedded systems (SoC-FPGAs, Microcontrollers, IoT, etc); two technical topics that complement each other.
+
+I'm trying to leverage at most this **TripleTen Bootcamp**, learning and progressing as fast I can, highly motivated by the company's commitment to help us to get a job, which has been complex since I had to pause my career long time due to health problems, so this a great challenge to me and this is the best way that I found in many aspects: focus on what truly matters to me, regain my work rhythm, update my technical and methodological skills, engage in a relationship based on feedback and meaningful reasons for what I do, organize my portfolio, restore my confidence in life and in myself with facts, and achieve an opportunity for professional growth.
