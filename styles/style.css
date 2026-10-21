@@ -209,6 +209,27 @@ a {
   ); /* De transparente a oscuro */
   pointer-events: none; /* Vital: permite hacer clic a través del gradiente si la imagen es un enlace */
 }
+.project-card__tech-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  /* IMPORTANTE: Envuelve las filas en sentido inverso (de abajo hacia arriba) */
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none;
+  list-style: none;
+}
+.project-card__tech-icon svg {
+  width: 40px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  pointer-events: auto;
+  display: block;
+}
 .project-card__img {
   width: 100%;
   aspect-ratio: 16/9;
@@ -401,6 +422,13 @@ a {
   }
   .project-cards {
     grid-template-columns: 1fr;
+  }
+  .project-card__tech-icons {
+    gap: clamp(5px, 1.071vw + 0.714px, 10px);
+  }
+  .project-card__tech-icon svg {
+    width: clamp(20px, 4.464vw + 5.714px, 40px);
+    height: auto;
   }
   .contact__social-links {
     gap: clamp(40px, 8.929vw + 11.429px, 80px);
