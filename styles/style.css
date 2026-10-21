@@ -192,10 +192,28 @@ a {
   display: flex;
   flex-direction: column;
 }
+.project-card__img-container {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  display: block;
+}
+.project-card__img-container::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* Ocupa el 100% de ancho y alto del contenedor */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  ); /* De transparente a oscuro */
+  pointer-events: none; /* Vital: permite hacer clic a través del gradiente si la imagen es un enlace */
+}
 .project-card__img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  display: block;
 }
 .project-card__info {
   height: 100%;
