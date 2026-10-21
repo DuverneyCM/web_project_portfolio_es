@@ -6,7 +6,7 @@
   --size-mobile: 320px;
   --size-minimal: 200px;
   --color-bg-body: #111111;
-  --color-bg-circle-center: #6d6dff;
+  --color-bg-circle-center: #169;
   --color-text-base-dark-mode: #fff;
   --color-bg-card: #1c1c1c;
   --font-open-sans: "Open Sans", Verdana, Arial, sans-serif;
@@ -124,7 +124,7 @@ a {
   color: #fff;
   text-decoration: none;
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(to right, #4c1a97, #6d6dff);
+  border-image: linear-gradient(to right, #123, var(--color-bg-circle-center));
   border-image-slice: 1;
   padding-bottom: 5px;
 }
@@ -221,6 +221,9 @@ a {
 }
 .project-card__info-link-demo {
   color: var(--color-bg-circle-center);
+  & svg path {
+    fill: var(--color-bg-circle-center);
+  }
 }
 .project-card__info-link-github {
   color: #fff9;
