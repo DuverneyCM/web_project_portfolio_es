@@ -20,6 +20,9 @@
 a {
   text-decoration: none;
   color: var(--color-text-base-dark-mode);
+  &:hover {
+    opacity: 50%;
+  }
 }
 .body {
   min-width: var(--size-minimal);
@@ -220,7 +223,7 @@ a {
   color: var(--color-bg-circle-center);
 }
 .project-card__info-link-github {
-  opacity: 60%;
+  color: #fff9;
 }
 
 .footer {
