@@ -23,9 +23,9 @@ a {
   }
 }
 .body {
-  min-width: var(--size-minimal);
-  max-width: var(--size-web);
-  padding: 0 120px;
+  min-height: 100vh;
+  max-width: 100%;
+  padding-inline: auto;
   font-family: var(--font-open-sans);
   font-weight: 400;
   font-style: normal;
@@ -34,9 +34,13 @@ a {
   letter-spacing: 0;
   color: var(--color-text-base-dark-mode);
 }
+.container {
+  min-width: var(--size-minimal);
+  max-width: var(--size-web);
+  padding: 0 120px;
+  margin-inline: auto;
+}
 .bg-glow {
-  min-height: 100vh;
-  max-width: 100%;
   background-color: var(--color-bg-body);
   position: relative;
   overflow-x: hidden;
@@ -294,7 +298,7 @@ a {
 }
 
 @media screen and (max-width: 1023px) {
-  .body {
+  .container {
     padding-inline: clamp(40px, 31.25vw - 200px, 120px);
   }
   .header {
@@ -339,7 +343,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .body {
+  .container {
     padding-inline: clamp(20px, 4.464vw + 5.714px, 40px);
     font-size: clamp(16px, 0.435vw + 14.891px, 18px);
   }
@@ -389,7 +393,6 @@ a {
     font-size: clamp(28px, 2.679vw + 19.429px, 40px);
   }
   .project-cards {
-    grid-template-columns: 1fr;
     gap: clamp(10px, 2.232vw + 2.857px, 20px);
   }
   .project-card__info {
@@ -424,7 +427,5 @@ a {
 }
 
 @media screen and (max-width: 320px) {
-  .body {
-    padding-inline: 20px;
-  }
+  /*template for screen cases far too small*/
 }
