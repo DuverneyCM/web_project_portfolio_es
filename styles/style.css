@@ -39,6 +39,12 @@ a {
   max-width: var(--size-web);
   padding: 0 120px;
   margin-inline: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
 }
 .bg-glow {
   background-color: var(--color-bg-body);
