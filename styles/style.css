@@ -433,5 +433,12 @@ a {
 }
 
 @media screen and (max-width: 320px) {
-  /*template for screen cases far too small*/
+  .body {
+    width: 320px;
+    max-width: 320px;
+    min-width: 320px;
+    transform: scale(calc(100vw / 320));
+    transform-origin: top left;
+    overflow-x: hidden;
+  }
 }
